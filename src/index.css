@@ -4,3 +4,8 @@
   --body-font-color: #e6edf3;
   --body-icon-color: #8d96a0;
 }
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
