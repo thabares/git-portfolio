@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --AppHeader: #010409;
   --body-font-size: 0.875rem;

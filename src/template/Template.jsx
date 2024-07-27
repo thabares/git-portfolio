@@ -1,9 +1,9 @@
-import Home from '../pages/Home';
+import AppHeader from '../pages/AppHeader';
 
 const Template = () => {
   return (
     <div>
-      <Home />
+      <AppHeader />
     </div>
   );
 };

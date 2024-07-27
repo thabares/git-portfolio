@@ -5,36 +5,44 @@ import { MdOutlineContactPhone } from 'react-icons/md';
 import { GoProjectSymlink } from 'react-icons/go';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-const Home = () => {
-  const navigate = useNavigate();
+const AppHeader = () => {
   const location = useLocation();
-  console.log(location.pathname);
-  const handleRedirect = (pageUrl) => {
-    return navigate(pageUrl);
-  };
   return (
     <header className='appHeaderContainer'>
-      <div className='headerWrapper'>
-        <div className='headerContainer'>
-          <a className='userNameContainer'>
-            <h5 className='userName'>thabares</h5>
-          </a>
+      <div className='appHeaderGlobalBar pb-2'>
+        <div className='appHeaderGlobalBarStart'>
+          <div className='appHeaderContext'>
+            <div className='appHeaderContextFull'>
+              <nav>
+                <ul className='list-style-none'>
+                  <li>
+                    <a className='appHeaderContextItem' href='/'>
+                      <span className='appHeaderContextItemLabel'>
+                        thabares
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-        <div className='appHeaderUser'>
-          <button className='appHeaderUserButton'>
-            <span className='button-content'>
-              <span className='button-label'>
-                <img
-                  src={headerUserIcon}
-                  alt='headerUserIcon'
-                  className='avatar'
-                  size={30}
-                  height={30}
-                  width={30}
-                />
+        <div className='appHeaderGlobalBarEnd'>
+          <div className='appHeaderUser'>
+            <button className='buttonInvisible color-bg-transparent p-0'>
+              <span className='buttonContent'>
+                <span className='buttonLabel'>
+                  <img
+                    src={headerUserIcon}
+                    alt=''
+                    height={25}
+                    width={25}
+                    className='avatar'
+                  />
+                </span>
               </span>
-            </span>
-          </button>
+            </button>
+          </div>
         </div>
       </div>
       <div className='appHeaderLocal'>
@@ -78,4 +86,4 @@ const Home = () => {
     </header>
   );
 };
-export default Home;
+export default AppHeader;
