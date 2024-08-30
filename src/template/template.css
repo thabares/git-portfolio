@@ -1,0 +1,42 @@
+.px-3 {
+  padding-right: var(1rem, 16px) !important;
+  padding-left: var(1rem, 16px) !important;
+}
+
+.mt-2 {
+  margin-top: var(0.5rem, 8px) !important;
+}
+
+.container-xl {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Layout {
+  grid-auto-flow: column;
+  grid-template-columns: auto 0 minmax(0, calc(100% - var(256px) - var(16px)));
+  grid-gap: var(16px);
+}
+
+.Layout {
+  display: grid;
+  --Layout-sidebar-width: 220px;
+  --Layout-gutter: 16px;
+}
+
+@media (min-width: 768px) {
+  .px-md-4 {
+    padding-right: var(1.5rem, 24px) !important;
+    padding-left: var(1.5rem, 24px) !important;
+  }
+  .Layout {
+    --Layout-sidebar-width: 256px;
+  }
+}
+
+@media (min-width: 544px) {
+  .Layout {
+    --Layout-sidebar-width: 220px;
+  }
+}
