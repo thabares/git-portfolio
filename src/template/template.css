@@ -1,42 +1,38 @@
-.px-3 {
-  padding-right: var(1rem, 16px) !important;
-  padding-left: var(1rem, 16px) !important;
-}
-
-.mt-2 {
-  margin-top: var(0.5rem, 8px) !important;
-}
-
-.container-xl {
-  max-width: 1280px;
+.app-container {
+  max-width: 88vw;
   margin-right: auto;
   margin-left: auto;
 }
 
-.Layout {
-  grid-auto-flow: column;
-  grid-template-columns: auto 0 minmax(0, calc(100% - var(256px) - var(16px)));
-  grid-gap: var(16px);
+.template-wrapper {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  width: 100%;
+  min-height: 86.3vh;
+  max-height: 100%;
 }
 
-.Layout {
-  display: grid;
-  --Layout-sidebar-width: 220px;
-  --Layout-gutter: 16px;
+.app-wrapper {
+  display: flex;
+  padding-top: 2rem;
 }
 
-@media (min-width: 768px) {
-  .px-md-4 {
-    padding-right: var(1.5rem, 24px) !important;
-    padding-left: var(1.5rem, 24px) !important;
+.sidebar-wrapper {
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-wrapper {
+    display: block;
   }
-  .Layout {
-    --Layout-sidebar-width: 256px;
-  }
-}
 
-@media (min-width: 544px) {
-  .Layout {
-    --Layout-sidebar-width: 220px;
+  .template-wrapper {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .app-wrapper {
+    padding-top: 0rem;
+    margin-top: 1rem;
   }
 }

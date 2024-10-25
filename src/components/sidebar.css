@@ -1,0 +1,78 @@
+.sidebar-layout {
+  width: 296px;
+}
+
+.profile-image {
+  box-shadow: 0 0 0 1px #ffffff26;
+  border-width: 1px;
+  border-color: #ffffff26;
+  border-radius: 50% !important;
+}
+
+.v-card-names-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.vcard-names {
+  line-height: 1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.v-card-fullname {
+  font-size: 24px;
+}
+
+.v-nickname {
+  font-size: 20px;
+  color: #9198a1;
+  font-weight: 250;
+  display: block;
+  line-height: 28px;
+}
+
+.vcard-detail {
+  display: flex;
+  align-items: center;
+}
+
+.p-icon {
+  color: #9198a1;
+}
+
+.link:hover {
+  border-bottom: 1px solid;
+  color: #4493f8;
+}
+
+.p-label {
+  padding-left: 0.4rem;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-pic-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-image {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .v-card-names-container {
+    margin-left: 1rem !important;
+  }
+
+  .v-card-fullname {
+    font-size: 18px !important;
+  }
+
+  .v-nickname {
+    font-size: 15px !important;
+  }
+}
