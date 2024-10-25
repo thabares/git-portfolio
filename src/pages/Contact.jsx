@@ -1,4 +1,4 @@
 const Contact = () => {
-  return <div>Contact</div>;
+  return <div>Contact In progress</div>;
 };
 export default Contact;
