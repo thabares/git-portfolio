@@ -13,7 +13,7 @@ const Template = () => {
             <div className='sidebar-wrapper'>
               <Sidebar />
             </div>
-            <div className='content-wrapper'>
+            <div className='content-wrapper mt-5'>
               <Outlet />
             </div>
           </div>

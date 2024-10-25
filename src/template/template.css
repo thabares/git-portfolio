@@ -21,6 +21,10 @@
   height: 100%;
 }
 
+.content-wrapper {
+  margin-left: 2.5rem;
+}
+
 @media only screen and (max-width: 600px) {
   .app-wrapper {
     display: block;
@@ -34,5 +38,10 @@
   .app-wrapper {
     padding-top: 0rem;
     margin-top: 1rem;
+  }
+
+  .content-wrapper {
+    margin-left: 0px !important;
+    margin-bottom: 1.25rem !important;
   }
 }
