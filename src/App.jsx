@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import Overview from './pages/Overview';
 import Contact from './pages/Contact';
-import Projects from './pages/Projects';
 import Template from './template/Template';
+import Experience from './pages/Experience';
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <Routes>
         <Route element={<Template />}>
           <Route path='/' element={<Overview />} />
-          <Route path='/projects' element={<Projects />} />
+          <Route path='/experience' element={<Experience />} />
           <Route path='/contact' element={<Contact />} />
         </Route>
       </Routes>

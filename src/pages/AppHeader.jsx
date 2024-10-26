@@ -1,7 +1,7 @@
 import './appHeader.css';
 import headerUserIcon from '../avatar.png';
 import { IoBookOutline } from 'react-icons/io5';
-import { MdOutlineContactPhone } from 'react-icons/md';
+import { MdOutlineContactPhone, MdLaptopMac } from 'react-icons/md';
 import { GoProjectSymlink } from 'react-icons/go';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -61,12 +61,12 @@ const AppHeader = () => {
 
             <li className='inlineFlex'>
               <a
-                href='/projects'
+                href='/experience'
                 className={`underlineNavItem no-wrap 
-                  ${location.pathname === '/projects' && `selected`}`}
+                  ${location.pathname === '/experience' && `selected`}`}
               >
-                <GoProjectSymlink className='overviewIcon' />
-                <span>Projects</span>
+                <MdLaptopMac className='overviewIcon' />
+                <span>Experience</span>
               </a>
             </li>
 
