@@ -1,0 +1,24 @@
+.input-container {
+  border: 1px solid #3d444d;
+  outline: none;
+  border-radius: 6px;
+  display: inline-flex;
+  margin-bottom: 14px;
+}
+
+.input-container input,
+.input-container textarea {
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+  height: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container textarea {
+  height: 200px;
+  padding-top: 10px;
+}

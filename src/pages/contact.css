@@ -1,0 +1,57 @@
+.contact-wrapper {
+  width: 100%;
+}
+
+.form {
+  width: 50vw;
+}
+
+.name-mobile-container {
+  display: block;
+}
+
+.name-wrapper {
+  width: 49%;
+}
+
+.mobile-wrapper {
+  width: 49%;
+  margin-left: 1vw;
+}
+
+.email-wrapper,
+.subject-wrapper,
+.message-wrapper {
+  width: 100%;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.submit-button {
+  background-color: #238636;
+  height: 32px;
+  border-width: 1px;
+  border-radius: 6px;
+  padding: 0px 12px;
+  min-width: max-content;
+  font-weight: 500;
+  font-style: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .name-wrapper {
+    width: 100%;
+  }
+
+  .mobile-wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .form {
+    width: 100%;
+  }
+}

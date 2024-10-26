@@ -106,7 +106,7 @@ const Overview = () => {
       <div className='box'>
         <div className='box-body'>
           <div className='user-text mb-3'>
-            <a href='/'>thabares</a>
+            <a href='/'>/thabares</a>
           </div>
           <article className='container-lg'>
             <ul className='list-styled'>
